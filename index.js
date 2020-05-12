@@ -25,9 +25,9 @@ function currentLine(current){
   } else {
       for (var i = 0; i < current.length; i++) {
         if(i === current.length - 1){
-          line = line + i + ". " + current[i]
+          line = line + (i+1) + ". " + current[i]
         } else {
-          line = line + i + ". " + current[i] + ", "
+          line = line + (i+1) + ". " + current[i] + ", "
         }
 
       }
