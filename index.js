@@ -6,12 +6,15 @@ function takeANumber(current,newPerson){
 }
 function nowServing(current){
   var number = current.length
+  var serving = current[0]
   if (current.length > 0){
-    return current.shift();
 
-    //else {
-    //    return "There is nobody waiting to be served!"
-    //}
+    current.shift();
+    return "Currently serving " + serving + "."
   }
+    else {
+        return "There is nobody waiting to be served!"
+    }
+
 
 }
