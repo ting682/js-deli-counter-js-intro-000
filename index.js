@@ -9,9 +9,9 @@ function nowServing(current){
   if (current.length > 0){
     return current.shift();
 
-    else {
-        return "There is nobody waiting to be served!"
-    }
+    //else {
+    //    return "There is nobody waiting to be served!"
+    //}
   }
 
 }
