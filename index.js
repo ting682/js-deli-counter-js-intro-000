@@ -15,6 +15,23 @@ function nowServing(current){
     else {
         return "There is nobody waiting to be served!"
     }
-
-
+}
+function currentLine(current){
+  var number = current.length
+  var line = "The line is currently: "
+  if(current.length === 0){
+    return "The line is currently empty."
+    
+  } else {
+      for (var i = 0; i < current.length; i++) {
+        if(i === current.length - 1){
+          line = line + i + ". " + current[i]
+        } else {
+          line = line + i + ". " + current[i] + ", "
+        }
+        
+      } 
+      
+      return line;
+  }
 }
