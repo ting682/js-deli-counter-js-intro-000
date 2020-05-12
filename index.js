@@ -6,7 +6,7 @@ function takeANumber(current,newPerson){
 }
 function nowServing(current){
   var number = current.length
-  if (current.length != 0){
+  if (current.length > 0){
     return current.shift();
 
     else {
